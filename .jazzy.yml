@@ -1,0 +1,8 @@
+author: HomebaseAI
+author_url: https://twitter.com/rahulkatariya91
+github_url: https://github.com/chickdan/DownPicker
+root_url: https://chickdan.github.io/DownPicker/
+module: DownPicker
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'DownPicker.xcworkspace', -scheme, 'DownPicker-iOS']
