@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
  s.social_media_url = 'https://twitter.com/HomebaseAI'
  s.authors = { "HomebaseAI" => "daniel.chick@homebase.ai" }
  s.source = { :git => "https://github.com/HomebaseAI/DownPickerSwift.git", :tag => "v"+s.version.to_s }
- s.platforms = { :ios => "9.0", :osx => "10.10", :tvos => "9.0", :watchos => "2.0" }
+ s.platforms = { :ios => "9.0"}
  s.requires_arc = true
 
  s.default_subspec = "Core"
