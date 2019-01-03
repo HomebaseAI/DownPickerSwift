@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
  s.name = 'DownPickerSwift'
  s.version = '1.0.0'
  s.license = { :type => "MIT", :file => "LICENSE" }
- s.summary = 'DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS that will behave like their HTML / Android counterparts. You\'ll only need a standard UITextField and few lines of code.'
+ s.summary = 'DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS.'
  s.homepage = 'https://homebase.ai'
  s.social_media_url = 'https://twitter.com/HomebaseAI'
  s.authors = { "HomebaseAI" => "daniel.chick@homebase.ai" }
