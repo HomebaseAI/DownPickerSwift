@@ -1,10 +1,10 @@
 # DownPickerSwift
 
-[![Platforms](https://img.shields.io/cocoapods/p/DownPickerSwift.svg)](https://cocoapods.org/pods/DownPickerSwift) [![License](https://img.shields.io/cocoapods/l/DownPickerSwift.svg)](https://raw.githubusercontent.com/HomebaseAI/DownPicker/master/LICENSE)
+[![Platforms](https://img.shields.io/cocoapods/p/DownPickerSwift.svg)](https://cocoapods.org/pods/DownPickerSwift) [![License](https://img.shields.io/cocoapods/l/DownPickerSwift.svg)](https://raw.githubusercontent.com/HomebaseAI/DownPickerSwift/master/LICENSE)
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/DownPickerSwift.svg)](https://cocoapods.org/pods/DownPickerSwift)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DownPickerSwift.svg)](https://cocoapods.org/pods/DownPickerSwift)
 
-[![Travis](https://img.shields.io/travis/HomebaseAI/DownPickerSwift/master.svg)](https://travis-ci.org/HomebaseAI/DownPickerSwift/branches) [![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
+[![Travis](https://img.shields.io/travis/HomebaseAI/DownPickerSwift/master.svg)](https://travis-ci.org/HomebaseAI/DownPickerSwift/branches)
 
 DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS that will behave like their HTML / Android counterparts. You'll only need a standard UITextField and few lines of code.
 
