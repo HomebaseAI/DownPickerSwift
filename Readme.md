@@ -59,10 +59,10 @@ To integrate DownPickerSwift into your Xcode project using CocoaPods, specify it
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
-pod 'DownPickerSwift', '~> 0.7.0'
+pod 'DownPickerSwift', '~> 1.0.0'
 ```
 
 Then, run the following command:
@@ -88,7 +88,7 @@ $ brew install carthage
 To integrate DownPickerSwift into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "HomebaseAI/DownPickerSwift" ~> 0.7.0
+github "HomebaseAI/DownPickerSwift" ~> 1.0.0
 ```
 
 </details>
@@ -153,7 +153,7 @@ Once you have DownPicker installed and included in your project, you can either 
 
 Add (or choose) a **UITextField** you would like to transform to a DownPicker. You can use the Storyboard designer tool or do it programmatically; you can also set up constraints, custom placement/coords, font, colors and anything else you like. When you're done, open your controller and create a property for the DownPicker wrapper:
 
-    #import DownPicker
+    import DownPicker
 
     let textField = UITextField()
     let picker: DownPicker?
@@ -207,6 +207,7 @@ Issues and pull requests are welcome!
 ## Author
 
 HomebaseAI [@HomebaseAI](https://twitter.com/HomebaseAI)
+Maintained by [@chickdan](https://github.com/chickdan)
 
 ## License
 
