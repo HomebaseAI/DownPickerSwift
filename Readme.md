@@ -62,7 +62,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'DownPickerSwift', '~> 1.0.0'
+pod 'DownPickerSwift', '~> 1.0.1'
 ```
 
 Then, run the following command:
@@ -88,7 +88,7 @@ $ brew install carthage
 To integrate DownPickerSwift into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "HomebaseAI/DownPickerSwift" ~> 1.0.0
+github "HomebaseAI/DownPickerSwift" ~> 1.0.1
 ```
 
 </details>
@@ -169,7 +169,7 @@ That's it. You can retrieve the user's choice at any time using `self.datePicker
 
 If you'd like to use DownPicker as a custom control instead, just instantiate the included **UIDownPicker** class programmatically and attach it to your view like any other UI control:
 
-    #import DownPicker
+    import DownPicker
 
     let picker: UIDownPicker?
 
@@ -206,8 +206,7 @@ Issues and pull requests are welcome!
 
 ## Author
 
-HomebaseAI [@HomebaseAI](https://twitter.com/HomebaseAI)
-Maintained by [@chickdan](https://github.com/chickdan)
+HomebaseAI [@HomebaseAI](https://twitter.com/HomebaseAI) Maintained by [@chickdan](https://github.com/chickdan)
 
 ## License
 
