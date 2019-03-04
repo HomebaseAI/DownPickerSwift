@@ -88,7 +88,7 @@ $ brew install carthage
 To integrate DownPickerSwift into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "HomebaseAI/DownPickerSwift" ~> 1.0.1
+github "HomebaseAI/DownPickerSwift" ~> 1.1.1
 ```
 
 </details>
