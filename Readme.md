@@ -62,7 +62,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'DownPickerSwift', '~> 1.1.0'
+pod 'DownPickerSwift', '~> 1.1.1'
 ```
 
 Then, run the following command:
