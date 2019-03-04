@@ -198,7 +198,8 @@ You can also:
 -   configure (and/or localize) the placeholder text string using the `downPicker.setPlaceholder(newString: String)` and `downPicker.setPlaceholderWhileSelecting(newString: String)` methods.
 -   retrieve, customize and hook on the inner **UIPickerView** control using the `downPicker.getPickerView()` method (use at your own risk).
 -   retrieve, customize and hook on the inner **UITextField** control using the `downPicker.getTextView()` method (use at your own risk). Remember that if you used the wrapper, it's the exact same control you passed so you might prefer to use your main reference instead.
--   the cancel button can be removed if the boolean flag property `shouldDisplayCancelButton` is set to `false` after DownPicker is instantiated
+-   the cancel button can be removed if the boolean flag property `shouldDisplayCancelButton` is set to `false` after DownPicker is instantiated.
+-   add a title to the toolbar using `setToolbarTitle(newTitle: String)` for providing more context around what the picker is for.
 
 # Contributing
 
