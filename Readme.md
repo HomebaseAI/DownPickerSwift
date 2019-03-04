@@ -4,7 +4,7 @@
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DownPickerSwift.svg)](https://cocoapods.org/pods/DownPickerSwift)
 
-[![Travis](https://img.shields.io/travis/HomebaseAI/DownPickerSwift/master.svg)](https://travis-ci.org/HomebaseAI/DownPickerSwift/branches)
+<!--[![Travis](https://img.shields.io/travis/HomebaseAI/DownPickerSwift/master.svg)](https://travis-ci.org/HomebaseAI/DownPickerSwift/branches)-->
 
 DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS that will behave like their HTML / Android counterparts. You'll only need a standard UITextField and few lines of code.
 
@@ -109,7 +109,7 @@ $ git init
 -   Add DownPickerSwift as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
 
 ```bash
-$ git submodule add https://github.com/HomebaseAI/DownPickerDownPickerSwift.git
+$ git submodule add https://github.com/HomebaseAI/DownPickerSwift.git
 $ git submodule update --init --recursive
 ```
 
@@ -207,7 +207,8 @@ Issues and pull requests are welcome!
 
 ## Author
 
-HomebaseAI [@HomebaseAI](https://twitter.com/HomebaseAI) Maintained by [@chickdan](https://github.com/chickdan)
+This library is inspired by [DownPicker](https://github.com/Darkseal/DownPicker)  
+Owned by [@HomebaseAI](https://twitter.com/HomebaseAI) and Maintained by [chickdan](https://github.com/chickdan)
 
 ## License
 
