@@ -16,10 +16,12 @@ open class DownPicker: UIControl {
     private var previouslySelectedString = ""
     private var toolbarDoneButtonText = "Done"
     private var toolbarCancelButtonText = "Cancel"
+    private var toolbarTitleLabel = UILabel()
     
     public var toolbarStyle: UIBarStyle = .default
     public var showArrowImage = true
     public var shouldDisplayCancelButton = true
+    
     public var text: String {
         get { return textField.text ?? "" }
     }
@@ -81,13 +83,15 @@ open class DownPicker: UIControl {
         
         let doneButton = UIBarButtonItem(title: toolbarDoneButtonText, style: .done, target: self, action: #selector(doneClicked))
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let titleItem = UIBarButtonItem(customView: toolbarTitleLabel)
+        titleItem.isEnabled = false
         
         if shouldDisplayCancelButton {
             let cancelButton = UIBarButtonItem(title: toolbarCancelButtonText, style: .done, target: self, action: #selector(cancelClicked))
             
             toolbar.setItems([cancelButton, flexibleSpace, doneButton], animated: false)
         } else {
-            toolbar.setItems([flexibleSpace, doneButton], animated: false)
+            toolbar.setItems([titleItem, flexibleSpace, doneButton], animated: false)
         }
         
         return toolbar
@@ -214,6 +218,10 @@ extension DownPicker {
     
     public func setToolbarCancelButtonTitle(newTitle: String) {
         toolbarCancelButtonText = newTitle
+    }
+    
+    public func setToolbarTitle(newTitle: String) {
+        toolbarTitleLabel.text = newTitle
     }
     
     public func setData(with data: [String]) {
