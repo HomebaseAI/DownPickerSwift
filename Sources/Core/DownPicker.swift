@@ -102,11 +102,11 @@ open class DownPicker: UIControl {
     }
     
     @objc private func cancelClicked() {
-        textField.resignFirstResponder()
         if previouslySelectedString.isEmpty || !dataSource.contains(previouslySelectedString) {
             textField.placeholder = placeholder
         }
         textField.text = previouslySelectedString
+        textField.resignFirstResponder()
     }
     
     @objc private func doneClicked() {
