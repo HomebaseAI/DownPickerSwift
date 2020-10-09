@@ -5,12 +5,6 @@
       location = "group:DownPicker.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DownPicker.playground">
-   </FileRef>
-   <FileRef
-      location = "group:scripts">
-   </FileRef>
-   <FileRef
       location = "group:CODE_OF_CONDUCT.md">
    </FileRef>
    <FileRef
