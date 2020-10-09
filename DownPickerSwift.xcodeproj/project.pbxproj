@@ -409,9 +409,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.homebase.DownPickerSwift;
 				PRODUCT_NAME = DownPickerSwift;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -432,8 +433,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.homebase.DownPickerSwift;
 				PRODUCT_NAME = DownPickerSwift;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
