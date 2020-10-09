@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DownPicker.xcodeproj">
+      location = "group:/Users/danielchick/Desktop/Homebase/DownPickerSwift/DownPickerSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CODE_OF_CONDUCT.md">

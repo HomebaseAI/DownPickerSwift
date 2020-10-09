@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3549BB501DA38A2000C63030 /* DownPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* DownPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB661DA38ADB00C63030 /* DownPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* DownPicker.framework */; };
+		3549BB661DA38ADB00C63030 /* DownPickerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* DownPickerSwift.framework */; };
 		359649031FB18CC000FC7ADC /* DownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359649021FB18CBF00FC7ADC /* DownPicker.swift */; };
 		BD35B4F221DE6F45009F360C /* UIDownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35B4F121DE6F45009F360C /* UIDownPicker.swift */; };
 /* End PBXBuildFile section */
@@ -39,9 +39,9 @@
 /* Begin PBXFileReference section */
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
-		3549BB211DA389CD00C63030 /* DownPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3549BB211DA389CD00C63030 /* DownPickerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DownPickerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB581DA38A8800C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3549BB611DA38ADB00C63030 /* DownPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3549BB611DA38ADB00C63030 /* DownPickerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownPickerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		359649021FB18CBF00FC7ADC /* DownPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownPicker.swift; sourceTree = "<group>"; };
 		BD35B4F121DE6F45009F360C /* UIDownPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDownPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3549BB661DA38ADB00C63030 /* DownPicker.framework in Frameworks */,
+				3549BB661DA38ADB00C63030 /* DownPickerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +78,8 @@
 		3549BB061DA387DB00C63030 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3549BB211DA389CD00C63030 /* DownPicker.framework */,
-				3549BB611DA38ADB00C63030 /* DownPickerTests.xctest */,
+				3549BB211DA389CD00C63030 /* DownPickerSwift.framework */,
+				3549BB611DA38ADB00C63030 /* DownPickerSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3549BB201DA389CD00C63030 /* DownPicker */ = {
+		3549BB201DA389CD00C63030 /* DownPickerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "DownPicker" */;
+			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "DownPickerSwift" */;
 			buildPhases = (
 				3549BB1C1DA389CD00C63030 /* Sources */,
 				3549BB1D1DA389CD00C63030 /* Frameworks */,
@@ -161,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = DownPicker;
+			name = DownPickerSwift;
 			productName = "DownPicker-iOS";
-			productReference = 3549BB211DA389CD00C63030 /* DownPicker.framework */;
+			productReference = 3549BB211DA389CD00C63030 /* DownPickerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3549BB601DA38ADB00C63030 /* DownPickerTests */ = {
+		3549BB601DA38ADB00C63030 /* DownPickerSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "DownPickerTests" */;
+			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "DownPickerSwiftTests" */;
 			buildPhases = (
 				3549BB5D1DA38ADB00C63030 /* Sources */,
 				3549BB5E1DA38ADB00C63030 /* Frameworks */,
@@ -180,9 +180,9 @@
 			dependencies = (
 				3549BB681DA38ADB00C63030 /* PBXTargetDependency */,
 			);
-			name = DownPickerTests;
+			name = DownPickerSwiftTests;
 			productName = "DownPickerTests-iOS";
-			productReference = 3549BB611DA38ADB00C63030 /* DownPickerTests.xctest */;
+			productReference = 3549BB611DA38ADB00C63030 /* DownPickerSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "DownPicker" */;
+			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "DownPickerSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3549BB201DA389CD00C63030 /* DownPicker */,
-				3549BB601DA38ADB00C63030 /* DownPickerTests */,
+				3549BB201DA389CD00C63030 /* DownPickerSwift */,
+				3549BB601DA38ADB00C63030 /* DownPickerSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 /* Begin PBXTargetDependency section */
 		3549BB681DA38ADB00C63030 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3549BB201DA389CD00C63030 /* DownPicker */;
+			target = 3549BB201DA389CD00C63030 /* DownPickerSwift */;
 			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,8 +405,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.homebase.DownPickerSwift;
-				PRODUCT_NAME = DownPicker;
+				PRODUCT_NAME = DownPickerSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -427,8 +428,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.homebase.DownPickerSwift;
-				PRODUCT_NAME = DownPicker;
+				PRODUCT_NAME = DownPickerSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -473,7 +475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "DownPicker" */ = {
+		3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "DownPickerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB0B1DA387DB00C63030 /* Debug */,
@@ -482,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "DownPicker" */ = {
+		3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "DownPickerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB271DA389CD00C63030 /* Debug */,
@@ -491,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "DownPickerTests" */ = {
+		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "DownPickerSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB6A1DA38ADB00C63030 /* Debug */,
