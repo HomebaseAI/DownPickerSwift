@@ -26,6 +26,6 @@
       location = "group:Gemfile.lock">
    </FileRef>
    <FileRef
-      location = "group:DownPicker.podspec">
+      location = "group:/Users/danielchick/Desktop/Homebase/DownPickerSwift/DownPickerSwift.podspec">
    </FileRef>
 </Workspace>
