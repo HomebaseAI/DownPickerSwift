@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// DownPicker control which acts on a supplied textfield to present
+/// a verticially scrolling caurosel of options.
+///
+/// Built on the UIPickerView
 open class DownPicker: UIControl {
     private let textField: UITextField
     private var dataSource = [String]()
@@ -18,26 +22,36 @@ open class DownPicker: UIControl {
     private var toolbarCancelButtonText = "Cancel"
     private var toolbarTitleLabel = UILabel()
     
+    /// Sets the style of the UIToolBar. By default the style is `.default`
     public var toolbarStyle: UIBarStyle = .default
+    
+    /// Determines whether or not a down arrow is shown in the text field.
     public var showArrowImage = true
+    
+    /// Determinnes whether or not the cancel button should be visible.
     public var shouldDisplayCancelButton = true
     
+    /// Text to be assigned to the text field.
     public var text: String {
         get { return textField.text ?? "" }
     }
     
+    /// Placeholder for the text view.
     public var placeholder = "Tap to choose..." {
         didSet {
             textField.placeholder = placeholder
         }
     }
     
+    /// Image to be used as the right accessory of the text view.
+    /// Hidden and shown by setting `showArrowImage`
     public var arrowImage: UIImage? {
         didSet {
             setupArrowImage()
         }
     }
     
+    /// Initializer if data is not being supplied on creation.
     public init(with textField: UITextField) {
         self.textField = textField
         super.init(frame: CGRect.zero)
@@ -45,6 +59,7 @@ open class DownPicker: UIControl {
         setupTextField()
     }
     
+    /// Initializer if data is being supplied on creation.
     public init(with textField: UITextField, data: [String]) {
         self.textField = textField
         super.init(frame: CGRect.zero)
@@ -97,7 +112,7 @@ open class DownPicker: UIControl {
         return toolbar
     }
     
-    func setPlaceholder(placeholder: String) {
+    private func setPlaceholder(placeholder: String) {
         textField.placeholder = placeholder
     }
     
@@ -146,6 +161,7 @@ open class DownPicker: UIControl {
     }
 }
 
+// MARK: UIPickerView Delegate & Datasource
 extension DownPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -176,8 +192,8 @@ extension DownPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
+// MARK: UITextFieldDelegate
 extension DownPicker: UITextFieldDelegate {
-    
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if dataSource.count > 0 {
             showPicker()
@@ -207,31 +223,67 @@ extension DownPicker: UITextFieldDelegate {
 
 //MARK: Public functions
 extension DownPicker {
-    
+    /**
+     * Sets the attributed placeholder of the textfield with the supplied
+     * attributed string.
+     *
+     * - parameters:
+     *      - newTitle: Attributed string to be assigned as the textfield placeholder
+     */
     public func setAttributedPlaceholder(newTitle: NSAttributedString) {
         textField.attributedPlaceholder = newTitle
     }
     
+    /**
+     * Sets the title of the right toolbar button.
+     *
+     * - parameters:
+     *      - newTitle: String to be assigned as the right button
+     */
     public func setToolbarDoneButtonTitle(newTitle: String) {
         toolbarDoneButtonText = newTitle
     }
     
+    /**
+    * Sets the title of the left toolbar button.
+    *
+    * - parameters:
+    *      - newTitle: String to be assigned as the left button
+    */
     public func setToolbarCancelButtonTitle(newTitle: String) {
         toolbarCancelButtonText = newTitle
     }
     
+    /**
+    * Sets the title of the toolbar title in the center.
+    *
+    * - parameters:
+    *      - newTitle: String to be assigned as the title
+    */
     public func setToolbarTitle(newTitle: String) {
         toolbarTitleLabel.text = newTitle
     }
     
+    /**
+    * Sets the data displayed in the PickerView
+    *
+    * - parameters:
+    *      - with: [String] to be used as the datasource
+    */
     public func setData(with data: [String]) {
         dataSource = data
     }
     
+    /**
+    * Gets the textfield
+    */
     public func getTextField() -> UITextField {
         return textField
     }
     
+    /**
+    * Gets the picker view
+    */
     public func getPickerView() -> UIPickerView {
         return pickerView
     }

@@ -20,11 +20,23 @@ open class UIDownPicker: UITextField {
         super.init(coder: aDecoder)
         picker = DownPicker(with: self, data: [String]())
     }
-    
+
+    /**
+    * Sets the data displayed in the PickerView
+    *
+    * - parameters:
+    *      - with: [String] to be used as the datasource
+    */
     public func setData(with data: [String]) {
         picker?.setData(with: data)
     }
     
+    /**
+    * Sets the arrow image on the right of the text field
+    *
+    * - parameters:
+    *      - newImage: UIImage
+    */
     public func setImage(newImage: UIImage?) {
         picker?.arrowImage = newImage
     }
