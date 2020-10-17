@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 70,
+      "symbol": "DownPicker.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 165,
+      "symbol": "DownPicker.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 169,
+      "symbol": "DownPicker.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 173,
+      "symbol": "DownPicker.pickerView(_:didSelectRow:inComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 179,
+      "symbol": "DownPicker.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 197,
+      "symbol": "DownPicker.textFieldShouldBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 206,
+      "symbol": "DownPicker.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 210,
+      "symbol": "DownPicker.textFieldDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 214,
+      "symbol": "DownPicker.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 218,
+      "symbol": "DownPicker.setArrowVisibility(shouldShow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 227,
+      "symbol": "DownPicker.setAttributedPlaceholder(newTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 231,
+      "symbol": "DownPicker.setToolbarDoneButtonTitle(newTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 235,
+      "symbol": "DownPicker.setToolbarCancelButtonTitle(newTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 239,
+      "symbol": "DownPicker.setToolbarTitle(newTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 243,
+      "symbol": "DownPicker.setData(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 247,
+      "symbol": "DownPicker.getTextField()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/DownPicker.swift",
+      "line": 251,
+      "symbol": "DownPicker.getPickerView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/UIDownPicker.swift",
+      "line": 11,
+      "symbol": "UIDownPicker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/UIDownPicker.swift",
+      "line": 14,
+      "symbol": "UIDownPicker.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/UIDownPicker.swift",
+      "line": 19,
+      "symbol": "UIDownPicker.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/UIDownPicker.swift",
+      "line": 24,
+      "symbol": "UIDownPicker.setData(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/danielchick/Desktop/Homebase/DownPickerSwift/Sources/Core/UIDownPicker.swift",
+      "line": 28,
+      "symbol": "UIDownPicker.setImage(newImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/danielchick/Desktop/Homebase/DownPickerSwift"
+}

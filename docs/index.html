@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DownPickerSwift  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="DownPickerSwift  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">DownPickerSwift 2.0.0 Docs</a> (61% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">DownPickerSwift Reference</a>
+        <img id="carat" src="img/carat.png" />
+        DownPickerSwift  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/DownPicker.html">DownPicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UIDownPicker.html">UIDownPicker</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='downpickerswift' class='heading'>DownPickerSwift</h1>
+
+<p><a href="https://cocoapods.org/pods/DownPickerSwift"><img src="https://img.shields.io/cocoapods/p/DownPickerSwift.svg" alt="Platforms"></a> <a href="https://raw.githubusercontent.com/HomebaseAI/DownPickerSwift/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/DownPickerSwift.svg" alt="License"></a></p>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a> <a href="https://cocoapods.org/pods/DownPickerSwift"><img src="https://img.shields.io/cocoapods/v/DownPickerSwift.svg" alt="CocoaPods Compatible"></a></p>
+
+<!--[![Travis](https://img.shields.io/travis/HomebaseAI/DownPickerSwift/master.svg)](https://travis-ci.org/HomebaseAI/DownPickerSwift/branches)-->
+
+<p>DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS that will behave like their HTML / Android counterparts. You&rsquo;ll only need a standard UITextField and few lines of code.</p>
+
+<p>This library is inspired by <a href="https://github.com/Darkseal/DownPicker">DownPicker</a></p>
+
+<ul>
+<li><a href="#What%20does%20it%20do">Features</a></li>
+<li><a href="#How%20does%20it%20work">How it Works</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='what-does-it-do' class='heading'>What does it do</h2>
+
+<p>It takes any <strong>UITextField</strong> already present in your code (including those added to a <em>Storyboard</em>):</p>
+
+<p><img src="https://raw.githubusercontent.com/Darkseal/DownPicker/gh-pages/images/DownPicker/UITextField.base.png" alt="alt text" title="Here&#39;s a standard UITextField"></p>
+
+<p>and turns it into this:</p>
+
+<p><img src="https://raw.githubusercontent.com/Darkseal/DownPicker/gh-pages/images/DownPicker/UITextField.DownPicker.png" alt="alt text" title="Here&#39;s a DownPicker control"></p>
+
+<p>It&rsquo;s as simple as that. You only need to provide an array of data.</p>
+
+<p><strong>NOTE</strong>: If you don&rsquo;t like the <em>control wrapper</em> approach, you can also use it as a <em>custom control</em> via the included <strong>UIDownPicker</strong> class: read the following paragraph for more info.</p>
+<h2 id='how-does-it-work' class='heading'>How does it work</h2>
+
+<p>DownPicker is basically a <em>control interface wrapper</em>, meaning that you won&rsquo;t use it as a control - it will use an existing UITextField control instead. This is a good thing, because you&rsquo;ll be able to design, positioning and skin your UITextField like you always do, programmatically or inside a <em>Storyboard</em> UI, depending on how you are used to work. You won&rsquo;t change your style, as it will adapt to suit yours.</p>
+
+<p>However, if you don&rsquo;t like the <em>control wrapper</em> pattern, you can just use it as a <em>custom control</em> using the included <strong>UIDownPicker</strong> class. It&rsquo;s entirely up to you (and very easy to install in both scenarios).</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0+</li>
+<li>Xcode 10.0+</li>
+</ul>
+<h1 id='installation' class='heading'>Installation</h1>
+<h3 id='dependency-managers' class='heading'>Dependency Managers</h3>
+
+<details>
+  <summary><strong>CocoaPods</strong></summary>
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+&ldquo;`bash
+$ gem install cocoapods
+&rdquo;`
+
+To integrate DownPickerSwift into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+&ldquo;`ruby
+source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
+platform :ios, &lsquo;9.0&rsquo;
+use_frameworks!
+
+pod &lsquo;DownPickerSwift&rsquo;, &lsquo;~> 1.1.1&rsquo;
+&rdquo;`
+
+Then, run the following command:
+
+&ldquo;`bash
+$ pod install
+&rdquo;`
+
+</details>
+
+<details>
+  <summary><strong>Carthage</strong></summary>
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+&ldquo;`bash
+$ brew update
+$ brew install carthage
+&rdquo;`
+
+To integrate DownPickerSwift into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+&ldquo;`ogdl
+github &quot;HomebaseAI/DownPickerSwift&rdquo; ~> 1.1.1
+&ldquo;`
+
+</details>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate DownPickerSwift into your project manually.</p>
+
+<details>
+  <summary><strong>Git Submodules</strong></summary><p>
+
+-   Open up Terminal, `cd` into your top-level project directory, and run the following command &quot;if&rdquo; your project is not initialized as a git repository:
+
+&ldquo;`bash
+$ git init
+&rdquo;`
+
+-   Add DownPickerSwift as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
+
+&ldquo;`bash
+$ git submodule add https://github.com/HomebaseAI/DownPickerSwift.git
+$ git submodule update &ndash;init &ndash;recursive
+&rdquo;`
+
+-   Open the new `DownPickerSwift` folder, and drag the `DownPicker.xcodeproj` into the Project Navigator of your application&rsquo;s Xcode project.
+
+    > It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.
+
+-   Select the `DownPicker.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
+-   Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+-   In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+-   Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+-   You will see two different `DownPicker.xcodeproj` folders each with two different versions of the `DownPicker.framework` nested inside a `Products` folder.
+
+    > It does not matter which `Products` folder you choose from.
+
+-   Select the `DownPicker.framework`.
+
+-   And that&rsquo;s it!
+
+> The `DownPicker.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
+
+</p></details>
+
+<details>
+  <summary><strong>Embedded Binaries</strong></summary><p>
+
+-   Download the latest release from https://github.com/HomebaseAI/DownPickerSwift/releases
+-   Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+-   In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+-   Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+-   Add the downloaded `DownPicker.framework`.
+-   And that&rsquo;s it!
+
+</p></details>
+<h1 id='usage' class='heading'>Usage</h1>
+
+<p>Once you have DownPicker installed and included in your project, you can either use it as a Control Wrapper or as a Custom Control: the choice is up to you, depending on your programming style.</p>
+<h3 id='as-a-control-wrapper' class='heading'>As a Control Wrapper</h3>
+
+<p>Add (or choose) a <strong>UITextField</strong> you would like to transform to a DownPicker. You can use the Storyboard designer tool or do it programmatically; you can also set up constraints, custom placement/coords, font, colors and anything else you like. When you&rsquo;re done, open your controller and create a property for the DownPicker wrapper:</p>
+<pre class="highlight plaintext"><code>import DownPicker
+
+let textField = UITextField()
+let picker: DownPicker?
+</code></pre>
+
+<p>Then add these lines to your controller&rsquo;s <strong>viewDidLoad</strong> method:</p>
+<pre class="highlight plaintext"><code>let dummyData = ["R.E.M.", "Dire Straits", "Police", "Sex Pistols", "Pink Floyd"]
+picker = DownPicker(with: textField, data: dummyData)
+</code></pre>
+
+<p>That&rsquo;s it. You can retrieve the user&rsquo;s choice at any time using <code>self.datePicker.text</code> or <code>textField.text</code>.</p>
+<h3 id='as-a-custom-control' class='heading'>As a Custom Control</h3>
+
+<p>If you&rsquo;d like to use DownPicker as a custom control instead, just instantiate the included <strong>UIDownPicker</strong> class programmatically and attach it to your view like any other UI control:</p>
+<pre class="highlight plaintext"><code>import DownPicker
+
+let picker: UIDownPicker?
+</code></pre>
+
+<p>Then add these lines to your controller&rsquo;s <strong>viewDidLoad</strong> method:</p>
+<pre class="highlight plaintext"><code>let dummyData = ["R.E.M.", "Dire Straits", "Police", "Sex Pistols", "Pink Floyd"]
+picker = UIDownPicker(with: dummyData)
+</code></pre>
+<h2 id='status-change-event-handling' class='heading'>Status Change event handling</h2>
+
+<p>You can bind your own delegate function to DownPicker&rsquo;s status change by using the <code>UIControlEventValueChanged</code> Control action in the following way:</p>
+<pre class="highlight plaintext"><code>picker?.addTarget(self, action: #selector(printTest(selectedValue:)), for: .valueChanged)
+
+@objc private func printTest(selectedValue: DownPicker) {
+    print(selectedValue.text)
+}
+</code></pre>
+<h2 id='additional-features' class='heading'>Additional Features</h2>
+
+<p>You can also:</p>
+
+<ul>
+<li>defer data loading using the <code>downPicker.setData(newData: [String])</code> method.</li>
+<li>disable the right arrow image using the <code>downPicker.showArrowImage = false</code> method.</li>
+<li>use a custom right arrow image using the <code>downPicker.setArrowImage(newImage: UIImage)</code>.</li>
+<li>configure (and/or localize) the placeholder text string using the <code>downPicker.setPlaceholder(newString: String)</code> and <code>downPicker.setPlaceholderWhileSelecting(newString: String)</code> methods.</li>
+<li>retrieve, customize and hook on the inner <strong>UIPickerView</strong> control using the <code>downPicker.getPickerView()</code> method (use at your own risk).</li>
+<li>retrieve, customize and hook on the inner <strong>UITextField</strong> control using the <code>downPicker.getTextView()</code> method (use at your own risk). Remember that if you used the wrapper, it&rsquo;s the exact same control you passed so you might prefer to use your main reference instead.</li>
+<li>the cancel button can be removed if the boolean flag property <code>shouldDisplayCancelButton</code> is set to <code>false</code> after DownPicker is instantiated.</li>
+<li>add a title to the toolbar using <code>setToolbarTitle(newTitle: String)</code> for providing more context around what the picker is for.</li>
+</ul>
+<h1 id='contributing' class='heading'>Contributing</h1>
+
+<p>Issues and pull requests are welcome!</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>This library is inspired by <a href="https://github.com/Darkseal/DownPicker">DownPicker</a><br>
+Owned by <a href="https://twitter.com/HomebaseAI">@HomebaseAI</a> and Maintained by <a href="https://github.com/chickdan">chickdan</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>DownPickerSwift is released under the MIT license. See <a href="https://github.com/HomebaseAI/DownPickerSwift/blob/master/LICENSE">LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/HomebaseAI/DownPickerSwift" target="_blank" rel="external">HomebaseAI</a>. All rights reserved. (Last updated: 2020-10-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
