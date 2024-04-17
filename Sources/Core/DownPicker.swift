@@ -143,7 +143,6 @@ open class DownPicker: UIControl {
         previouslySelectedString = text
         
         let newPicker = UIPickerView()
-        newPicker.showsSelectionIndicator = true
         newPicker.delegate = self
         newPicker.dataSource = self
         

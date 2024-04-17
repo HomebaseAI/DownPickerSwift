@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'DownPickerSwift'
- s.version = '3.0.0'
+ s.version = '3.0.1'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'DownPickerSwift is an extremely light-weight class library for creating DropDownList / ComboBox controls for iOS.'
  s.homepage = 'https://github.com/HomebaseAI/DownPickerSwift'
@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
  s.default_subspec = "Core"
  s.subspec "Core" do |ss|
      ss.source_files  = "Sources/**/*.swift"
-     ss.framework  = "Foundation"
  end
 
  s.resource_bundle = {
